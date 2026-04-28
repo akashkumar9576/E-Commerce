@@ -1,0 +1,116 @@
+.orders-page {
+  background: #f1f3f6;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.orders-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.order-card {
+  background: white;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-id {
+  font-size: 14px;
+  color: gray;
+}
+
+.order-date {
+  font-size: 12px;
+  color: #888;
+}
+
+/* STATUS BADGE */
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: white;
+}
+
+.status-badge.Placed { background: gray; }
+.status-badge.Processing { background: orange; }
+.status-badge.Shipped { background: blue; }
+.status-badge.Delivered { background: green; }
+.status-badge.Cancelled { background: red; }
+.status-badge.Returned { background: purple; }
+
+/* ITEMS */
+.order-item {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.order-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.order-total {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* ACTION BUTTONS */
+.order-actions {
+  margin-top: 10px;
+}
+
+.cancel-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.return-btn {
+  background: purple;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* STATUS BAR */
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.status-step {
+  text-align: center;
+  flex: 1;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.active {
+  background: green;
+}
